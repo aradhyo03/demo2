@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Handling and HTTP Methods</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Form Handling & HTTP Methods</h2>
+
+        <!-- Form -->
+        <form id="userForm">
+
+            <label>Name:</label>
+            <input type="text" id="name" placeholder="Enter name" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="Enter email" required>
+
+            <button type="submit">Submit Form (POST)</button>
+
+        </form>
+
+        <hr>
+
+        <!-- GET -->
+        <button onclick="getData()">GET - Fetch Data</button>
+
+        <!-- POST -->
+        <button onclick="postData()">POST - Send Data</button>
+
+        <!-- PATCH -->
+        <button onclick="patchData()">PATCH - Update Data</button>
+
+        <h3>Output:</h3>
+        <pre id="output">Results will appear here...</pre>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
